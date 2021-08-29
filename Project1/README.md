@@ -30,8 +30,8 @@ Security Benifits of a Load Balancers:
 - Simplify PCI compliance (Payment Card Industry regulations)
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the logs and system traffic.
-- _TODO: What does Filebeat watch for?_
-- _TODO: What does Metricbeat record?_
+- Filebeat monitors the log files or locations that you specify, collects log events, and forwards them either to Elasticsearch or Logstash for indexing. (SOURCE: https://www.elastic.co/guide/en/beats/filebeat/current/filebeat-overview.html)
+- Metricbeat is a lightweight shipper that you can install on your servers to periodically collect metrics from the operating system and from services running on the server. Metricbeat takes the metrics and statistics that it collects and ships them to the output that you specify, such as Elasticsearch or Logstash. Metricbeat helps you monitor your servers by collecting metrics from the system and services running on the server. (SOURCE: https://www.elastic.co/guide/en/beats/metricbeat/current/metricbeat-overview.html)
 
 The configuration details of each machine may be found below.
 
