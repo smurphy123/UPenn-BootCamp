@@ -2,7 +2,7 @@
 
 The files in this repository were used to configure the network depicted below.
 
-![](Images/RedTeamAzureMap.png)
+!(Images/RedTeamAzureMap.png)
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
 
@@ -60,7 +60,7 @@ A summary of the access policies in place can be found in the table below.
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because when working in IT, you're likely doing the same tasks over and over. 
 
-- Ansible automates tasks that are either cumbersome or repetitive or complex. This helps organisations drive complexity out of their environments and accelerate DevOps initiatives.
+- Ansible automates tasks that are either cumbersome, repetitive, or complex. This helps organisations drive complexity out of their environments and accelerate DevOps initiatives.
 
 The playbook implements the following tasks:
 - Installs docker.io
@@ -72,7 +72,7 @@ The playbook implements the following tasks:
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
+!(Images/docker-sebp-elk.png)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
