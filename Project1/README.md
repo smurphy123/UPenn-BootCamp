@@ -6,7 +6,7 @@ The files in this repository were used to configure the network depicted below.
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the playbook file may be used to install only certain pieces of it, such as Filebeat.
 
-  - `Ansible/docker-python-playbook.yml`
+  - `Ansible/docker-python-playbook`
 
 This document contains the following details:
 - Description of the Topologu
@@ -101,10 +101,8 @@ SSH into the control node and follow the steps below:
 - Run the playbook, and navigate to HTTP://(ELKserverIP):5601/app/kibana to check that the installation worked as expected.
 
 - Which file is the playbook? Where do you copy it?
-  - Filebeat playbook: filebeat-playbook.yml
-  Copy to the /etc/filebeat directory. 
-  - Metricbeat playbook: metricbeat-playbook.yml
-  Copy to the /etc/metricbeat directory.
+  - Filebeat playbook: filebeat-playbook.yml -> Copy to the /etc/filebeat directory. 
+  - Metricbeat playbook: metricbeat-playbook.yml -> Copy to the /etc/metricbeat directory.
 - Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?
   - Update the /etc/ansible/hosts file to make Ansible run on a specific machine. Update each playbook file and edit the hosts line to specify what machines that specific playbook file runs on.
 - Which URL do you navigate to in order to check that the ELK server is running?
