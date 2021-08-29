@@ -9,7 +9,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
   - [docker-python-playbook.yml](https://github.com/smurphy123/UPenn-BootCamp/blob/master/Project1/Ansible/docker-python-playbook.yml)
 
 This document contains the following details:
-- Description of the Topologu
+- Description of the Topology
 - Access Policies
 - ELK Configuration
   - Beats in Use
@@ -18,7 +18,7 @@ This document contains the following details:
 
 ### Description of the Topology
 
-The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
+The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the Damn Vulnerable Web Application.
 
 Load balancing ensures that the application will be highly available, in addition to restricting access to the network.
 - A load balancer intelligently distributes traffic from clients across multiple servers without the clients having to understand how many servers are in use or how they are configured. Because the load balancer sits between the clients and the servers it can enhance the user experience by providing additional security, performance, resilience and simplify scaling your website. A load balancer can add additional layers of security to your website without any changes to your application. (SOURCE: https://lumecloud.com/what-does-a-load-balancer-do/)
