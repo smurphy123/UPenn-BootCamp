@@ -37,7 +37,7 @@ The configuration details of each machine may be found below.
 
 | Name       | Function         | IP Address | Operating System |
 |------------|------------------|------------|------------------|
-| Jump Box   | Gateway          | 10.0.0.7   | Ubuntu 18.04-LTS |
+| Jump Box   | Gateway          | 10.0.0.4   | Ubuntu 18.04-LTS |
 | Web-1      | Web Server       | 10.0.0.5   | Ubuntu 18.04-LTS |
 | Web-2      | Web Server       | 10.0.0.6   | Ubuntu 18.04-LTS |
 | Elk Server | ELK Stack Server | 10.1.0.4   | Ubuntu 18.04-LTS |
@@ -101,9 +101,12 @@ SSH into the control node and follow the steps below:
 - Run the playbook, and navigate to HTTP://(ELKserverIP):5601/app/kibana to check that the installation worked as expected.
 
 - Which file is the playbook? Where do you copy it?
-  - The file for the Filebeat playbook is filebeat-playbook.yml and is copied to the /etc/filebeat directory. The file for the Metricbeat playbook is metricbeat-playbook.yml and is copied to the /etc/metricbeat directory.
+  - Filebeat playbook: filebeat-playbook.yml
+  Copy to the /etc/filebeat directory. 
+  - Metricbeat playbook: metricbeat-playbook.yml
+  Copy to the /etc/metricbeat directory.
 - Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?
-  - You update the /etc/ansible/hosts file to make Ansible run on a specific machine. You update each playbook file and edit the hosts line to specify what machines that specific playbook file runs on.
+  - Update the /etc/ansible/hosts file to make Ansible run on a specific machine. Update each playbook file and edit the hosts line to specify what machines that specific playbook file runs on.
 - Which URL do you navigate to in order to check that the ELK server is running?
   - HTTP://(ELKserverIP):5601/app/kibana
 
